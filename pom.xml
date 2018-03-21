@@ -12,13 +12,13 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <compiler.plugin.version>3.7.0</compiler.plugin.version>
-        <spring.version>4.3.14.RELEASE</spring.version>
+        <spring.version>5.0.4.RELEASE</spring.version>
         <jackson.version>2.9.4</jackson.version>
+        <compiler.plugin.version>3.7.0</compiler.plugin.version>
     </properties>
 
     <dependencies>
-        <!-- jetty servlet api-->
+        <!-- servlet api-->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -52,7 +52,7 @@
             <version>${jackson.version}</version>
         </dependency>
 
-        <!-- Test scope -->
+        <!-- test scope -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -99,13 +99,6 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
-                            <artifactSet>
-                                <excludes>
-                                    <exclude>log4j:log4j:jar:</exclude>
-                                    <exclude>commons-logging:commons-logging:jar:</exclude>
-                                    <exclude>org.springframework:*:jar:</exclude>
-                                </excludes>
-                            </artifactSet>
                             <createSourcesJar>true</createSourcesJar>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                         </configuration>
