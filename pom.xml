@@ -99,6 +99,11 @@
                             <goal>shade</goal>
                         </goals>
                         <configuration>
+                            <artifactSet>
+                                <excludes>
+                                    <exclude>org.springframework:*:jar:</exclude>
+                                </excludes>
+                            </artifactSet>
                             <createSourcesJar>true</createSourcesJar>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                         </configuration>
