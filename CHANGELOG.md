@@ -5,6 +5,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## [1.2] - 2018-04-07
+### update
+- minor update spring, jackson, mvel library
 
 ## [1.1] - 2018-03-17
 ### Added
