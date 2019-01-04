@@ -8,12 +8,12 @@
     <name>green-leaf</name>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.9</maven.compiler.source>
+        <maven.compiler.target>1.9</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <spring.version>5.0.5.RELEASE</spring.version>
-        <jackson.version>2.9.5</jackson.version>
+        <spring.version>5.0.7.RELEASE</spring.version>
+        <jackson.version>2.9.8</jackson.version>
         <compiler.plugin.version>3.7.0</compiler.plugin.version>
     </properties>
 
@@ -36,6 +36,14 @@
             <artifactId>mvel2</artifactId>
             <version>2.4.0.Final</version>
         </dependency>
+
+        <!-- JSON Web Tokens -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.0</version>
+        </dependency>
+
         <!-- json resolver -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
